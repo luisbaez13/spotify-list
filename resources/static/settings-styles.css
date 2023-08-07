@@ -1,0 +1,33 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.settings-tag{
+    text-align: center;
+    margin-top:2rem;
+}
+
+.btn{
+    width: 50%;
+    background-color: white;
+    margin:0 auto;
+    display:block;
+}
+
+
+.full-form{
+    width: 15rem;
+    margin: auto;
+}
+
+
+.btn-group{
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .submit-btn{
+    margin-top: 1rem;
+  }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/favicon/site.webmanifest">
+  <link rel="mask-icon" href="static/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>TopSongs...</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="static/settings-styles.css">
+</head>
+
+<body>
+  <div class="settings-tag">Settings:</div>
+
+  <div class="full-form">
+    <form method="POST" action="{{.api_search_link}}" class="settings-form" >
+      <div class="form-item">
+        <div class="btn-group top-track-select" role="group" name="top-type">
+          <input type="radio" class="btn-check" name="type-select" id="top-tracks"  checked="true" value="tracks">
+          <label class="btn btn-outline-primary" for="top-tracks" checked="true">Songs</label>
+
+          <input type="radio" class="btn-check" name="type-select" id="top-artists"  value="artists">
+          <label class="btn btn-outline-primary" for="top-artists" >Artists</label>
+        </div>
+      </div>
+
+      <div class="form-item">
+          <div class="btn-group time-select" role="group" name="time-select">
+          <input type="radio" class="btn-check" name="time-select" id="short-term" checked="true" value="short_term">
+          <label class="btn btn-outline-primary" for="short-term" checked="true">Recent</label>
+  
+          <input type="radio" class="btn-check" name="time-select" id="long-term" value="long_term">
+          <label class="btn btn-outline-primary" for="long-term">All-Time</label>
+        </div>
+      </div>
+
+      <div class="form-item">
+          <div class="btn-group num-select" role="group" name="num-select">
+          <input type="radio" class="btn-check" name="num-select" id="5-btn"  value="5">
+          <label class="btn btn-outline-primary" for="5-btn">5</label>
+  
+          <input type="radio" class="btn-check" name="num-select" id="10-btn" value="10">
+          <label class="btn btn-outline-primary" for="10-btn">10</label>
+  
+          <input type="radio" class="btn-check" name="num-select" id="15-btn" checked="true" value="15">
+          <label class="btn btn-outline-primary" for="15-btn" checked="true">15</label>
+        </div>
+      </div>
+
+      <div class="form-item">
+        <button class="btn btn-outline-primary submit-btn" type="submit"> Save </button>
+      </div>
+
+    </form>
+  </div>
+</body>
+
+</html>
