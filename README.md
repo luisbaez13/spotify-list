@@ -11,5 +11,9 @@ A website to make a simple server written in Go, it takes your top Spotify songs
 
 ## Demo Video
 
-https://github.com/luisbaez13/spotify-stats/assets/95329512/53b39b1c-fc91-4dc1-b493-098492a368ba
+
+
+https://github.com/luisbaez13/spotify-list/assets/95329512/86fc77d4-6222-4328-8e03-9c40bb1683a6
+
+
 
